@@ -6,8 +6,6 @@ import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 
-
-
 public class ListSortAbout {
 	public static void main(String[] args) {
 
@@ -36,6 +34,7 @@ public class ListSortAbout {
 
 		Comparator<Object> cmp1 = Collator.getInstance(java.util.Locale.CHINA);
 		Collections.sort(alist, cmp1);
+		System.out.println(alist);
 
 		for (String str : alist) {
 			System.out.println(str);

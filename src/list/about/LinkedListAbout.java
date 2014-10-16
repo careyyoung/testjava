@@ -22,5 +22,12 @@ public class LinkedListAbout {
 	    System.out.println("链表头数据:" + list.getFirst());
 	    // 获取链表尾数据
 	    System.out.println("链表尾数据:" + list.getLast());
+	    
+	    list.remove(1);
+	    System.out.println(list.size());
+	    
+	    
+	    
+	    
 	}
 }

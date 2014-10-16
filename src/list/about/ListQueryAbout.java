@@ -39,10 +39,10 @@ public class ListQueryAbout {
 		alist.add("list3");
 
 		// 实例化新的list防止因传递地址而达不到测试效果。
-		remove1(new ArrayList<String>(list));
-		remove2(new ArrayList<String>(list));
-		remove2_1(new ArrayList<String>(list));
-		remove3(new ArrayList<String>(list));
+		remove1(new ArrayList<String>(alist));
+		remove2(new ArrayList<String>(alist));
+		remove2_1(new ArrayList<String>(alist));
+		remove3(new ArrayList<String>(alist));
 	}
 
 	public static void remove1(List<String> list) {
@@ -55,6 +55,7 @@ public class ListQueryAbout {
 		} catch (Exception e) {
 			System.out.println("移除失败!");
 		}
+		System.out.println(list);
 	}
 
 	public static void remove2(List<String> list) {
@@ -63,6 +64,7 @@ public class ListQueryAbout {
 			String str = list.get(i);
 			if (str.equals("list2"))
 				list.remove(str);
+			System.out.println(list.size());
 		}
 		System.out.println(list);
 		System.out.println("也有异常，可以用下面的方法避免。");
@@ -88,7 +90,9 @@ public class ListQueryAbout {
 			String str = iter.next();
 			if (str.equals("list2"))
 				iter.remove();
+			System.out.print(list.size()+"\t");
 		}
+		System.out.println();
 
 		System.out.println(list);
 	}

@@ -13,16 +13,30 @@ public class ArrayListAbout {
 	    list.add("list2");
 	    // 打印list的大小
 	    System.out.println(list.size());
-	 
+	    
+	    for(int i = 0; i<list.size(); i++){
+	    	System.out.print(list.get(i) + "  ");
+	    }
+	    System.out.println();
+	    
+	    for(String str: list){
+	    	System.out.print(str + "  ");
+	    }
+	    System.out.println();
+	    
 	    // 按索引移除元素
 	    list.remove(0);
+	    
+	    // 打印list的大小
+	    System.out.println(list.size());
 	    // 按对象移除元素
-	    list.remove("list2");
+	    //list.remove("list2");
 	    // 打印list的大小
 	    System.out.println(list.size());
 	 
 	    // 清空list
 	    list.clear();
+	    System.out.println(list.size());
 	}
 
 }
